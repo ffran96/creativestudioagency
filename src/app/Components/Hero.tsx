@@ -9,7 +9,7 @@ export default function Hero() {
     <Carousel
       plugins={[
         Autoplay({
-          delay: 3000,
+          delay: 5000,
         }),
       ]}
       opts={{
@@ -19,12 +19,12 @@ export default function Hero() {
       <CarouselContent>
         {HeroItem.map(({ id, image, title, slogan, subtitle }) => (
           <CarouselItem key={id} className="flex bg-cover bg-center h-svh w-svw relative">
-            <img className='absolute object-cover w-full mix-blend-overlay h-full' src={image} />
-            <div className='bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] size-full absolute opacity-60'></div>
-            <div className='flex flex-col gap-5 max-w-4xl m-auto z-10 '>
-              <h1 className='uppercase text-xl font-semibold text-white'>{title}</h1>
-              <h2 className='text-7xl font-bold text-white leading-snug'>{slogan}</h2>
-              <p className='text-white font-semibold text-lg'>{subtitle}</p>
+            <img className='absolute object-cover w-full h-full' src={image} />
+            <div className='bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] size-full absolute opacity-60' ></div>
+            <div className='flex flex-col gap-5 md:max-w-4xl m-auto z-10 max-w-80'>
+              <h1 className='uppercase text-md lg:text-xl font-semibold text-white'>{title}</h1>
+              <h2 className='text-lg lg:text-7xl font-bold text-white leading-snug'>{slogan}</h2>
+              <p className='text-white font-semibold text:xs lg:text-lg'>{subtitle}</p>
               <div className='flex bg-white w-44 h-12 rounded-lg items-center justify-center font-medium text-[#0620e3] cursor-pointer hover:bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] hover:text-white'>Pide presupuesto</div>
             </div>
           </CarouselItem>
