@@ -1,11 +1,21 @@
 'use client'
 import React from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 import { HeroItem } from '@/Data/HeroItems'
 
 export default function Hero() {
   return (
-    <Carousel>
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+      opts={{
+        align: "start",
+        loop: true,
+      }}>
       <CarouselContent>
         {HeroItem.map(({ id, image, title, slogan, subtitle }) => (
           <CarouselItem key={id} className="flex bg-cover bg-center h-svh w-svw relative">
@@ -15,6 +25,7 @@ export default function Hero() {
               <h1 className='uppercase text-xl font-semibold text-white'>{title}</h1>
               <h2 className='text-7xl font-bold text-white leading-snug'>{slogan}</h2>
               <p className='text-white font-semibold text-lg'>{subtitle}</p>
+              <div className='flex bg-white w-44 h-12 rounded-lg items-center justify-center font-medium text-[#0620e3] cursor-pointer hover:bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] hover:text-white'>Pide presupuesto</div>
             </div>
           </CarouselItem>
         ))}
@@ -24,7 +35,3 @@ export default function Hero() {
     </Carousel>
   )
 }
-
-/* bg-[url('/photo-laptop-with-cool-wallpaper-ambiance_568301-918.jpg')] */
-/* background-image: linear-gradient(90deg, #0045FF 0%, #BD29F2 100%); */
-/* bg-gradient-to-r from-[#0692e3] to-[#9b51e0] */
