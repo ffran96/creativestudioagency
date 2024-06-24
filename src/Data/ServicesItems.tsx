@@ -15,7 +15,7 @@ const ServicesItems = [
         id: 2,
         service: "Posicionamiento SEO",
         icon: "",
-        description: <>No busques clientes, <strong>haz que ellos te encuentren</strong> Más tráfico, más clientes.</>,
+        description: <>No busques clientes, <strong>haz que ellos te encuentren.</strong> Más tráfico, más clientes.</>,
     },
     {
         id: 3,
