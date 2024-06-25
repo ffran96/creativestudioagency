@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <article className="flex flex-col gap-5 font-medium bg-slate-100">
+    <article className="relative flex flex-col gap-5 font-medium bg-slate-100">
       <h3 className="mt-16 uppercase flex justify-center text-[#0045FF]">
         --- Nuestros servicios ---
       </h3>

@@ -4,7 +4,7 @@ import { Links } from "../../Data/Links";
 
 export default function Navbar() {
     return (
-        <nav className="absolute w-screen z-10 flex items-center justify-around border-b-[1px]">
+        <nav className="absolute w-full z-10 flex items-center justify-around border-b-[1px]">
             <div>
                 <Link href={"/"}>
                     <Logo width={250} height={100} />
