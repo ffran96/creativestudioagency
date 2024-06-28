@@ -1,6 +1,6 @@
-import Logo from "../Components/Logo";
 import Link from "next/link";
-import { Links } from "../../Data/Links";
+import Logo from "@/app/Components/Logo";
+import { Links } from "@/Data/Links";
 
 export default function Navbar() {
     return (
