@@ -28,7 +28,7 @@ export default function Hero() {
         {HeroItem.map(({ id, image, title, slogan, subtitle }) => (
           <CarouselItem key={id} className="flex h-svh  w-svw relative">
             <img className="absolute object-cover w-full h-full" src={image} />
-            <div className="bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] size-full absolute opacity-60"></div>
+            <div className="bg-gradient-to-r from-[#064ce3] to-[#9b51e0] size-full absolute opacity-60"></div>
             <div className="flex flex-col gap-5 md:max-w-4xl m-auto z-10 max-w-80">
               <h1 className="uppercase text-md lg:text-xl font-semibold text-white">
                 {title}

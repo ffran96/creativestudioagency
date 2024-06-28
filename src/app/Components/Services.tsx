@@ -18,7 +18,7 @@ export default function Services() {
       <ul className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 max-w-7xl m-auto gap-5 mt-16">
         {ServicesItems.map(({ id, service, icon, description }) => (
           <li
-            className="group hover:bg-gradient-to-t from-[#9b51e0] via-violet-600 to-blue-500 flex flex-col justify-center items-center bg-white w-96 h-[300px] rounded-3xl"
+            className="group hover:bg-gradient-to-t from-[#9b51e0] via-violet-600 to-blue-500 flex flex-col justify-center items-center bg-white w-[353px] h-[289px] rounded-3xl"
             key={id}
           >
             <div className=" flex items-center justify-center text-white size-20 bg-gradient-to-t from-[#9b51e0] via-violet-600 to-blue-500 rounded-full group-hover:bg-none group-hover:bg-white group-hover:text-black">
