@@ -15,7 +15,7 @@ export default function Projects() {
               <img alt={title} src={image} />
             </a>
             <a href={URL} target="_blank">
-              {title}{" "}
+              {title}
             </a>
           </li>
         ))}
