@@ -3,7 +3,7 @@ import {stadistics} from "@/Data/stadistics"
 
 export default function Stadistics() {
   return (
-    <article className="absolute pt-16 bg-slate-100 w-full">
+    <article className="pt-16 bg-slate-100 w-full">
       <div className="flex  justify-center max-w-7xl m-auto">
         <div className="relative w-[1380px] h-[254px] rounded-xl overflow-hidden ">
           <img

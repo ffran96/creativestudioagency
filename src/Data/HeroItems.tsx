@@ -12,8 +12,7 @@ const HeroItem = [
       title: "Agencia de Marketing Digital",
       slogan: "Más de 200 páginas creadas.",
       subtitle: "8 años de experiencia en el sector nos avalan.",
-  
-    }
+    },
   ]
 
   export {HeroItem}
