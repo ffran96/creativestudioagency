@@ -8,13 +8,13 @@ export default function Projects() {
       <h3 className="mt-12 text-2xl font-bold italic">
         Diseños de páginas web
       </h3>
-      <ul className="grid grid-cols-1  md:grid-cols-2 max-w-7xl m-auto gap-5 mt-12 bg-white">
+      <ul className="grid grid-cols-1  md:grid-cols-2 max-w-7xl m-auto gap-10 mt-12">
         {ProjectItems.map(({ id, title, image, URL }) => (
-          <li key={id} className="flex flex-col items-center font-bold italic">
+          <li key={id} className="mb-10 flex flex-col items-center font-bold italic">
             <a target="_blank" href={URL}>
-              <img alt={title} src={image} />
+              <img  className="w-[600px] h-[300px] object-fill bg-white rounded-xl p-5 hover:scale-105 transition-all" alt={title} src={image} />
             </a>
-            <a href={URL} target="_blank">
+            <a className="mt-3 hover:underline" href={URL} target="_blank">
               {title}
             </a>
           </li>
