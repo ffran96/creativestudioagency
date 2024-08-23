@@ -1,5 +1,5 @@
 import React from "react";
-import {stadistics} from "@/Data/stadistics"
+import { stadistics } from "@/Data/stadistics";
 
 export default function Stadistics() {
   return (
@@ -10,12 +10,21 @@ export default function Stadistics() {
             className="absolute object-cover w-full h-full "
             src="/abs_bg_3.jpg"
           />
-          <div className=" flex justify-around bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] size-full  opacity-60 ">
+          <div className="absolute bg-gradient-to-r from-[#0692e3] via-violet-600 to-[#9b51e0] size-full  opacity-60 ">
+          </div>
+          <div className="flex justify-around items-center size-full">
             {stadistics.map(({ id, icon, value, description }) => (
-              <div key={id} className="flex md:flex-col justify-center gap-5 items-center z-10  ">
-                <div className="text-white font-extrabold text-3xl">{icon}</ div>
-                <div className="text-white font-extrabold text-3xl">{value}</ div>
-                <div className="text-white font-extrabold text-3xl">{description}</ div>
+              <div
+                key={id}
+                className="relative flex md:flex-col justify-center gap-5 items-center z-20  "
+              >
+                <div className="text-white font-extrabold text-3xl">{icon}</div>
+                <div className="text-white font-extrabold text-3xl">
+                  {value}
+                </div>
+                <div className="text-white font-extrabold text-3xl">
+                  {description}
+                </div>
               </div>
             ))}
           </div>
