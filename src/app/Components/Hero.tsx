@@ -27,7 +27,7 @@ export default function Hero() {
       <CarouselContent>
         {HeroItem.map(({ id, image, title, slogan, subtitle }) => (
           <CarouselItem key={id} className="flex h-svh  w-svw relative">
-            <video autoPlay loop muted className="absolute object-cover w-full h-full" src={image} />
+            <video autoPlay playsInline preload="auto" loop muted className="absolute object-cover w-full h-full" src={image} />
             <div className="bg-gradient-to-r from-[#064ce3] to-[#9b51e0] size-full absolute opacity-60"></div>
             <div className="flex flex-col gap-5 md:max-w-4xl m-auto z-10 max-w-80">
               <h1 className="uppercase text-md lg:text-xl font-semibold text-white">
