@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="hidden sm:block">
                 <ul className="flex">
                     {Links.map(({ id, name, URL }) => (
-                        <li className="text-white font-semibold	" key={id}>
+                        <li className="text-white font-semibold	 text-xl" key={id}>
                             <Link className="px-6" href={URL}>{name}</Link>
                         </li>
                     ))}
